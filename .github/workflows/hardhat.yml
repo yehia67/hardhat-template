@@ -13,10 +13,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    env: 
-        PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-        ALCHEMY_KEY: ${{ secrets.ALCHEMY_KEY }}
-
 
     strategy:
       matrix:

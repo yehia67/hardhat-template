@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.4;
+pragma solidity ^0.7.6;
 
 contract Greeter {
     string private greeting;
@@ -12,7 +12,7 @@ contract Greeter {
         return greeting;
     }
 
-    function setGreeting(string memory _greeting) external {
-        greeting = _greeting;
+    function setGreeting(string memory greeting_) external {
+        greeting = greeting_;
     }
 }
